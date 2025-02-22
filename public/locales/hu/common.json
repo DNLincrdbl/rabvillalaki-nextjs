@@ -1,0 +1,230 @@
+{
+    "home": "Főoldal",
+    "about": "Rólunk",
+    "about_section": {
+        "title": {
+            "first": "Fedezze fel a tökéletes",
+            "second": "pihenés otthonát"
+        },
+        "description": "Szálláshelyünk több mint egy évtizede nyújt felejthetetlen élményeket vendégeinek. Modern kényelem és tradicionális vendégszeretet találkozik nálunk, hogy az Ön pihenése tökéletes legyen.",
+        "stats": {
+            "experience": "Év tapasztalat",
+            "guests": "Elégedett vendég",
+            "rating": "Értékelési átlag",
+            "returning": "Visszatérő vendég"
+        },
+        "cta": "Ismerje meg szolgáltatásainkat"
+    },
+    "rooms": "Szobák",
+    "contact": "Kapcsolat",
+    "booking": "Foglalás",
+
+    "book_now": "Foglaljon most",
+    "hero": {
+    "title": {
+      "part1": "Fedezze fel a",
+      "part2": "természet",
+      "part3": "nyugalmát"
+    },
+    "description": "Pihenjen és töltődjön fel egy lenyűgöző környezetben, ahol a kényelem és a nyugalom találkozik.",
+    "book_now": "Foglalás most",
+    "excellence_badge": "Kiváló választás"
+  },
+  "rooms_section": {
+    "title": "Szobáink",
+    "description": "Fedezze fel szálláshelyünk egyedi kialakítású szobáit, melyek mindegyike a kényelem és stílus tökéletes harmóniáját nyújtja",
+    "details": "Részletek",
+    "amenities": {
+      "king_size": "King size ágy",
+      "queen_size": "Queen size ágy",
+      "twin_beds": "Twin ágyak",
+      "ac": "Légkondicionáló",
+      "wifi": "Wifi",
+      "tv": "Smart TV",
+      "minibar": "Mini bár",
+      "safe": "Széf",
+      "kitchen": "Felszerelt konyha",
+      "balcony": "Erkély",
+      "sea_view": "Tengerre néző",
+      "washing_machine": "Mosógép",
+      "jacuzzi": "Jakuzzi",
+      "workspace": "Dolgozósarok",
+      "coffee_maker": "Kávéfőző",
+      "mini_kitchen": "Mini konyha",
+      "terrace": "Terasz",
+      "garden": "Kertkapcsolat"
+    },
+    "room_types": {
+      "superior": {
+        "name": "Superior Szoba",
+        "short_desc": "Elegáns kényelem két főre",
+        "description": "Tágas, luxus felszereltségű szobáink tökéletes választás pároknak. Modern fürdőszoba, king size ágy, és panorámás kilátás teszi különlegessé."
+      },
+      "deluxe": {
+        "name": "Deluxe Apartman",
+        "short_desc": "Tágas tér az egész családnak",
+        "description": "Kényelmes, két hálószobás apartmanunk tökéletes választás családok számára. Teljesen felszerelt konyha, tágas nappali és modern fürdőszoba várja vendégeinket."
+      }
+    },
+    "modal": {
+      "close": "Bezárás",
+      "price": "Ár",
+      "size": "Méret",
+      "capacity": "Kapacitás",
+      "amenities": "Felszereltség",
+      "book_now": "Foglalás"
+    }
+  },
+  "amenities_section": {
+    "title": "Villa Laki Rab felszereltsége",
+    "subtitle": "A legnépszerűbb szolgáltatások",
+    "categories": {
+      "stay": {
+        "title": "Remek az Ön tartózkodásához",
+        "items": [
+          "Saját fürdőszoba",
+          "Ingyenes parkolás",
+          "Ingyenes wifi",
+          "Kisállat bevihető",
+          "Strand",
+          "Légkondicionálás",
+          "Családi szobák",
+          "Síkképernyős tévé",
+          "Piknikezőhely"
+        ]
+      },
+      "outdoor": {
+        "title": "Kültéri egységek",
+        "items": [
+          "Tűzrakóhely",
+          "Piknikezőhely",
+          "Kerti bútorok",
+          "Napozóterasz",
+          "Saját partszakasz",
+          "Terasz",
+          "Kert"
+        ]
+      },
+      "kitchen": {
+        "title": "Konyha",
+        "items": [
+          "Közös konyha",
+          "Étkezőasztal",
+          "Konyhai felszerelés",
+          "Vízforraló",
+          "Hűtőszekrény"
+        ]
+      },
+      "bathroom": {
+        "title": "Fürdőszoba",
+        "items": [
+          "Vécépapír",
+          "Törölközők",
+          "Saját fürdőszoba",
+          "Vécé",
+          "Hajszárító",
+          "Zuhany"
+        ]
+      },
+      "bedroom": {
+        "title": "Hálószoba",
+        "items": [
+          "Ágynemű",
+          "Ruhásszekrény"
+        ]
+      },
+      "view": {
+        "title": "Kilátás",
+        "items": [
+          "Kertre nyíló kilátás",
+          "Tengerre nyíló kilátás",
+          "Kilátás"
+        ]
+      },
+      "languages": {
+        "title": "Beszélt nyelvek",
+        "items": [
+          "Német",
+          "Angol",
+          "Horvát",
+          "Magyar",
+          "Olasz"
+        ]
+      }
+    },
+    "top_amenities": {
+      "free_parking": "ingyenes parkolás",
+      "free_wifi": "ingyenes wifi",
+      "family_rooms": "családi szobák",
+      "non_smoking": "nemdohányzó szobák",
+      "bar": "bár",
+      "private_beach": "saját partszakasz"
+    },
+    "internet_title": "Internet",
+    "internet_description": "A szálláshely teljes területén WiFi internet-hozzáférés díjmentesen.",
+    "parking_title": "Parkolás",
+    "parking_description": "Ingyenes privát parkolás lehetséges a helyszínen (foglalás nem szükséges)."
+  },
+  "faq_section": {
+    "title": "Gyakori kérdések",
+    "subtitle": "Minden, amit tudni érdemes",
+    "questions": [
+      {
+        "question": "Mikor lehet bejelentkezni és kijelentkezni?",
+        "answer": "A bejelentkezés 14:00 órától, a kijelentkezés 10:00 óráig lehetséges. Kérjük, ha ettől eltérő időpontban szeretne érkezni vagy távozni, jelezze előre."
+      },
+      {
+        "question": "Van ingyenes parkolási lehetőség?",
+        "answer": "Igen, vendégeink számára ingyenes privát parkolót biztosítunk a szálláshely területén. Előzetes foglalás nem szükséges."
+      },
+      {
+        "question": "Elfogadnak bankkártyát?",
+        "answer": "Igen, elfogadunk Visa és Mastercard bankkártyákat. Emellett készpénzes és előre utalásos fizetésre is van lehetőség."
+      },
+      {
+        "question": "Lehet háziállatot hozni?",
+        "answer": "Igen, a háziállatok előzetes egyeztetés után fogadhatók. Kérjük, érkezés előtt jelezze, ha kisállattal érkezik."
+      },
+      {
+        "question": "Van légkondicionáló?",
+        "answer": "Igen, minden szobánk légkondicionálóval felszerelt, amely egyénileg szabályozható."
+      },
+      {
+        "question": "Milyen messze van a strand?",
+        "answer": "Saját partszakaszunk közvetlenül a szálláshely előtt található, körülbelül 50 méterre az apartmanoktól."
+      }
+    ]
+  },
+  "contact_section": {
+    "title": "Kapcsolat",
+    "subtitle": "Keressen minket bizalommal",
+    "form": {
+      "title": "Küldjön üzenetet",
+      "name": "Név",
+      "name_placeholder": "Az Ön neve",
+      "email": "Email",
+      "email_placeholder": "Az Ön email címe",
+      "message": "Üzenet",
+      "message_placeholder": "Írja meg üzenetét...",
+      "submit": "Üzenet küldése"
+    },
+    "info": {
+      "address": {
+        "title": "Cím",
+        "value": "Barbat 744, Rab 51280, Horvátország"
+      },
+      "phone": {
+        "title": "Telefon",
+        "value": "+385 99 3333 333"
+      },
+      "email": {
+        "title": "Email",
+        "value": "info@villalakirab.com"
+      },
+      "hours": {
+        "title": "Nyitvatartás",
+        "value": "Check-in: 14:00 - 23:00\nCheck-out: 6:00 - 10:00"
+      }
+    }
+  }
+}
