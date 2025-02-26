@@ -9,6 +9,20 @@ const About = () => {
   const [isVisible, setIsVisible] = useState(false);
   const { t } = useTranslation('common');
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const navbarHeight = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+  };
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -110,7 +124,10 @@ const About = () => {
               ))}
             </div>
 
-            <button className="bg-primary text-white px-8 py-3 rounded-full hover:bg-primary/90 transition-colors duration-300 flex items-center gap-2 group">
+            <button 
+              onClick={() => scrollToSection('amenities-section')}
+              className="bg-primary text-white px-8 py-3 rounded-full hover:bg-primary/90 transition-colors duration-300 flex items-center gap-2 group"
+            >
               {t('about_section.cta')}
               <svg 
                 className="w-5 h-5 transform transition-transform group-hover:translate-x-1" 

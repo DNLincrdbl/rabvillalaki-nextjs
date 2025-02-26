@@ -56,25 +56,61 @@
             "garden": "Garden access"
         },
         "room_types": {
-            "superior": {
-                "name": "Superior Room",
-                "short_desc": "Elegant comfort for two",
-                "description": "Our spacious, luxuriously equipped rooms are perfect for couples. Modern bathroom, king size bed, and panoramic views make it special."
+            "room1": {
+                "title": "Room 1",
+                "description": "Elegant, modern room for two people"
             },
-            "deluxe": {
-                "name": "Deluxe Apartment",
-                "short_desc": "Spacious area for the whole family",
-                "description": "Our comfortable two-bedroom apartment is perfect for families. A fully equipped kitchen, spacious living room and modern bathroom await our guests."
+            "room2": {
+                "title": "Room 2",
+                "description": "Spacious two-bedroom apartment for families"
+            },
+            "room3": {
+                "title": "Room 3",
+                "description": "Modern studio apartment with breathtaking views of the Adriatic Sea"
+            },
+            "room4": {
+                "title": "Room 4",
+                "description": "Three-bedroom, two-bathroom suite for larger families"
+            },
+            "room5": {
+                "title": "Room 5",
+                "description": "Ground floor apartment with private garden access"
+            },
+            "room6": {
+                "title": "Room 6",
+                "description": "Exclusive penthouse apartment with panoramic views and jacuzzi"
+            },
+            "room7": {
+                "title": "Room 7",
+                "description": "Practical layout room at an affordable price"
+            },
+            "room8": {
+                "title": "Room 8",
+                "description": "Romantic suite with private balcony"
+            },
+            "room9": {
+                "title": "Room 9",
+                "description": "Modern room with extra comfort amenities"
+            },
+            "room10": {
+                "title": "Room 10",
+                "description": "Elegant duplex apartment with gallery"
             }
         },
-        "modal": {
-            "close": "Close",
-            "price": "Price",
-            "size": "Size",
-            "capacity": "Capacity",
-            "amenities": "Amenities",
+        "rooms": {
+            "room1": {
+                "title": "Room name",
+                "description": "Room description"
+            }
+        },
+        "size": "{{size}} m²",
+        "capacity": "{{capacity}} persons",
+        "capacity_unit": "person",
+        "room_modal": {
+            "price_per_night": "Price per night",
             "book_now": "Book Now"
-        }
+        },
+        "price": "€{{price}}"
     },
     "amenities_section": {
         "title": "Villa Laki Rab Amenities",

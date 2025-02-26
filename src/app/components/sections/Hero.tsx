@@ -8,7 +8,7 @@ export default function Hero() {
 
   return (
     <section className="flex items-center justify-center min-h-[calc(100vh-80px)] bg-white">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-8 md:py-12 mt-16 md:mt-0">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
           
           <motion.div 
@@ -53,7 +53,7 @@ export default function Hero() {
                       layout="responsive" 
                       width={800} 
                       height={600} 
-                      className="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-700"
+                      className="w-full aspect-[4/3] object-cover object-[65%_center] hover:scale-105 transition-transform duration-700"
                     />
                   </div>
                 </div>

@@ -66,25 +66,61 @@
             "garden": "Pristup vrtu"
         },
         "room_types": {
-            "superior": {
-                "name": "Superior soba",
-                "short_desc": "Elegantna udobnost za dvoje",
-                "description": "Naše prostrane, luksuzno opremljene sobe savršen je za parove. Moderna kupaonica, king size krevet i panoramski pogled čine je posebnom."
+            "room1": {
+                "title": "Soba 1",
+                "description": "Elegantna, moderna soba za dvije osobe"
             },
-            "deluxe": {
-                "name": "Deluxe apartman",
-                "short_desc": "Prostran prostor za cijelu obitelj",
-                "description": "Naš udobni apartman s dvije spavaće sobe savršen je za obitelji. Potpuno opremljena kuhinja, prostrani dnevni boravak i moderna kupaonica čekaju naše goste."
+            "room2": {
+                "title": "Soba 2",
+                "description": "Prostran apartman s dvije spavaće sobe za obitelji"
+            },
+            "room3": {
+                "title": "Soba 3",
+                "description": "Moderni studio apartman s prekrasnim pogledom na Jadransko more"
+            },
+            "room4": {
+                "title": "Soba 4",
+                "description": "Apartman s tri spavaće sobe i dvije kupaonice za veće obitelji"
+            },
+            "room5": {
+                "title": "Soba 5",
+                "description": "Prizemni apartman s pristupom vrtu"
+            },
+            "room6": {
+                "title": "Soba 6",
+                "description": "Ekskluzivni penthouse apartman s panoramskim pogledom i jacuzzijem"
+            },
+            "room7": {
+                "title": "Soba 7",
+                "description": "Praktično uređena soba po pristupačnoj cijeni"
+            },
+            "room8": {
+                "title": "Soba 8",
+                "description": "Romantični apartman s privatnim balkonom"
+            },
+            "room9": {
+                "title": "Soba 9",
+                "description": "Moderna soba s dodatnim sadržajima za udobnost"
+            },
+            "room10": {
+                "title": "Soba 10",
+                "description": "Elegantni dvoetažni apartman s galerijom"
             }
         },
-        "modal": {
-            "close": "Zatvori",
-            "price": "Cijena",
-            "size": "Veličina",
-            "capacity": "Kapacitet",
-            "amenities": "Sadržaji",
+        "rooms": {
+            "room1": {
+                "title": "Naziv sobe",
+                "description": "Opis sobe"
+            }
+        },
+        "size": "{{size}} m²",
+        "capacity": "{{capacity}} osoba",
+        "capacity_unit": "osoba",
+        "room_modal": {
+            "price_per_night": "Cijena po noćenju",
             "book_now": "Rezerviraj"
-        }
+        },
+        "price": "{{price}} €"
     },
     "amenities_section": {
         "title": "Sadržaji Villa Laki Rab",

@@ -55,15 +55,45 @@
       "garden": "Kertkapcsolat"
     },
     "room_types": {
-      "superior": {
-        "name": "Superior Szoba",
-        "short_desc": "Elegáns kényelem két főre",
-        "description": "Tágas, luxus felszereltségű szobáink tökéletes választás pároknak. Modern fürdőszoba, king size ágy, és panorámás kilátás teszi különlegessé."
+      "room1": {
+        "title": "Szoba 1",
+        "description": "Elegáns, modern berendezésű szoba két fő részére"
       },
-      "deluxe": {
-        "name": "Deluxe Apartman",
-        "short_desc": "Tágas tér az egész családnak",
-        "description": "Kényelmes, két hálószobás apartmanunk tökéletes választás családok számára. Teljesen felszerelt konyha, tágas nappali és modern fürdőszoba várja vendégeinket."
+      "room2": {
+        "title": "Szoba 2",
+        "description": "Tágas, két hálószobás apartman családok számára"
+      },
+      "room3": {
+        "title": "Szoba 3",
+        "description": "Modern stúdió apartman lélegzetelállító kilátással az Adriai-tengerre"
+      },
+      "room4": {
+        "title": "Szoba 4",
+        "description": "Három hálószobás, két fürdőszobás lakosztály nagyobb családok számára"
+      },
+      "room5": {
+        "title": "Szoba 5",
+        "description": "Földszinti, kertre néző apartman saját terasszal"
+      },
+      "room6": {
+        "title": "Szoba 6",
+        "description": "Exkluzív tetőtéri apartman panorámás kilátással és jakuzzival"
+      },
+      "room7": {
+        "title": "Szoba 7",
+        "description": "Praktikus elrendezésű, kedvező árú szoba"
+      },
+      "room8": {
+        "title": "Szoba 8",
+        "description": "Romantikus hangulatú lakosztály privát erkéllyel"
+      },
+      "room9": {
+        "title": "Szoba 9",
+        "description": "Modern berendezésű szoba extra kényelmi szolgáltatásokkal"
+      },
+      "room10": {
+        "title": "Szoba 10",
+        "description": "Elegáns kétszintes apartman galériával"
       }
     },
     "modal": {
@@ -73,7 +103,21 @@
       "capacity": "Kapacitás",
       "amenities": "Felszereltség",
       "book_now": "Foglalás"
-    }
+    },
+    "rooms": {
+      "room1": {
+        "title": "Szoba neve",
+        "description": "Szoba leírása"
+      }
+    },
+    "size": "{{size}} m²",
+    "capacity": "{{capacity}} fő",
+    "capacity_unit": "fő",
+    "room_modal": {
+      "price_per_night": "Ár éjszakánként",
+      "book_now": "Foglalás"
+    },
+    "price": "{{price}} EUR"
   },
   "amenities_section": {
     "title": "Villa Laki Rab felszereltsége",

@@ -6,9 +6,7 @@ import { useTranslation } from 'next-i18next';
 
 interface Room {
   id: number;
-  name: string;
-  shortDesc: string;
-  description: string;
+  type: string;
   price: string;
   size: string;
   capacity: string;
@@ -19,12 +17,10 @@ interface Room {
 const rooms: Room[] = [
   {
     id: 1,
-    name: 'Superior Szoba',
-    shortDesc: 'Elegáns kényelem két főre',
-    description: 'Tágas, luxus felszereltségű szobáink tökéletes választás pároknak. Modern fürdőszoba, king size ágy, és panorámás kilátás teszi különlegessé.',
-    price: '45.000 Ft / éj',
-    size: '32m²',
-    capacity: '2 fő',
+    type: "room1",
+    price: "45000",
+    size: "32",
+    capacity: "2",
     images: [
       '/Room1/Lakatos_Banjol-033.jpg',
       '/Room1/Lakatos_Banjol-034.jpg',
@@ -60,31 +56,27 @@ const rooms: Room[] = [
       '/Room1/Lakatos_Banjol-064.jpg',
       '/Room1/Lakatos_Banjol-065.jpg'
     ],
-    amenities: ['King size ágy', 'Légkondicionáló', 'Mini bár', 'Wifi', 'Smart TV', 'Széf']
+    amenities: ['king_size', 'ac', 'wifi', 'tv', 'minibar', 'safe']
   },
   {
     id: 2,
-    name: 'Deluxe Apartman',
-    shortDesc: 'Tágas tér az egész családnak',
-    description: 'Kényelmes, két hálószobás apartmanunk tökéletes választás családok számára. Teljesen felszerelt konyha, tágas nappali és modern fürdőszoba várja vendégeinket.',
-    price: '65.000 Ft / éj',
-    size: '55m²',
-    capacity: '4-5 fő',
+    type: "room2",
+    price: "65000",
+    size: "55",
+    capacity: "4",
     images: [
       '/595182562.jpg',
       '/595182578.jpg',
       '/rablaki7813737.jpg'
     ],
-    amenities: ['2 hálószoba', 'Felszerelt konyha', 'Légkondicionáló', 'Wifi', 'Smart TV', 'Mosógép', 'Erkély']
+    amenities: ['bedrooms_2', 'kitchen', 'ac', 'wifi', 'tv', 'washing_machine', 'balcony']
   },
   {
     id: 3,
-    name: 'Tengerre Néző Stúdió',
-    shortDesc: 'Panorámás kilátás a tengerre',
-    description: 'Modern stúdió apartman lélegzetelállító kilátással az Adriai-tengerre. Tökéletes választás pároknak vagy egyéni utazóknak.',
-    price: '42.000 Ft / éj',
-    size: '28m²',
-    capacity: '2 fő',
+    type: "room3",
+    price: "42000",
+    size: "28",
+    capacity: "2",
     images: [
       '/Room3/Lakatos_Banjol-127.jpg',
       '/Room3/Lakatos_Banjol-128.jpg',
@@ -106,16 +98,14 @@ const rooms: Room[] = [
       '/Room3/Lakatos_Banjol-147.jpg',
       '/Room3/Lakatos_Banjol-148.jpg'
     ],
-    amenities: ['Tengerre néző erkély', 'Queen size ágy', 'Légkondicionáló', 'Wifi', 'Mini konyha', 'Smart TV']
+    amenities: ['sea_view', 'queen_size', 'ac', 'wifi', 'mini_kitchen', 'tv']
   },
   {
     id: 4,
-    name: 'Családi Lakosztály',
-    shortDesc: 'Tágas terek nagyobb családoknak',
-    description: 'Három hálószobás, két fürdőszobás lakosztály, teljesen felszerelt konyhával és tágas nappalival. Ideális nagyobb családok számára.',
-    price: '85.000 Ft / éj',
-    size: '75m²',
-    capacity: '6-7 fő',
+    type: "room4",
+    price: "85000",
+    size: "75",
+    capacity: "6",
     images: [
       '/Room4/Lakatos_Banjol-083.jpg',
       '/Room4/Lakatos_Banjol-084.jpg',
@@ -135,31 +125,27 @@ const rooms: Room[] = [
       '/Room4/Lakatos_Banjol-098.jpg',
       '/Room4/Lakatos_Banjol-099.jpg'
     ],
-    amenities: ['3 hálószoba', '2 fürdőszoba', 'Felszerelt konyha', 'Légkondicionáló', 'Wifi', 'Smart TV', 'Mosógép', 'Nagy erkély']
+    amenities: ['bedrooms_3', 'bathrooms_2', 'kitchen', 'ac', 'wifi', 'tv', 'washing_machine', 'balcony']
   },
   {
     id: 5,
-    name: 'Garden Suite',
-    shortDesc: 'Közvetlen kertkapcsolattal',
-    description: 'Földszinti, kertre néző apartman saját terasszal. Tökéletes választás kisgyermekes családoknak vagy idősebb vendégeknek.',
-    price: '55.000 Ft / éj',
-    size: '45m²',
-    capacity: '3-4 fő',
+    type: "room5",
+    price: "55000",
+    size: "45",
+    capacity: "4",
     images: [
       '/rablaki7813759.jpg',
       '/595182578.jpg',
       '/rablaki7813737.jpg'
     ],
-    amenities: ['Kertkapcsolat', 'Terasz', 'Felszerelt konyha', 'Légkondicionáló', 'Wifi', 'Smart TV', 'Mosógép']
+    amenities: ['garden', 'terrace', 'kitchen', 'ac', 'wifi', 'tv', 'washing_machine']
   },
   {
     id: 6,
-    name: 'Penthouse Apartman',
-    shortDesc: 'Luxus a legfelső szinten',
-    description: 'Exkluzív tetőtéri apartman panorámás kilátással a tengerre és a városra. Privát tetőterasz jakuzzival.',
-    price: '95.000 Ft / éj',
-    size: '80m²',
-    capacity: '4 fő',
+    type: "room6",
+    price: "95000",
+    size: "80",
+    capacity: "4",
     images: [
       '/Room6/Lakatos_Banjol-100.jpg',
       '/Room6/Lakatos_Banjol-101.jpg',
@@ -177,46 +163,40 @@ const rooms: Room[] = [
       '/Room6/Lakatos_Banjol-113.jpg',
       '/Room6/Lakatos_Banjol-114.jpg'
     ],
-    amenities: ['Tetőterasz', 'Jakuzzi', '2 hálószoba', 'Luxus fürdő', 'Felszerelt konyha', 'Légkondicionáló', 'Wifi', 'Smart TV']
+    amenities: ['terrace', 'jacuzzi', 'bedrooms_2', 'luxury_bath', 'kitchen', 'ac', 'wifi', 'tv']
   },
   {
     id: 7,
-    name: 'Economy Szoba',
-    shortDesc: 'Megfizethető kényelem',
-    description: 'Praktikus elrendezésű, minden szükséges kényelmi szolgáltatással felszerelt szoba kedvező áron.',
-    price: '35.000 Ft / éj',
-    size: '22m²',
-    capacity: '2 fő',
+    type: "room7",
+    price: "35000",
+    size: "22",
+    capacity: "2",
     images: [
       '/rablaki7813755.jpg',
       '/595182562.jpg',
       '/rablaki7813759.jpg'
     ],
-    amenities: ['Twin ágyak', 'Légkondicionáló', 'Wifi', 'TV', 'Mini hűtő']
+    amenities: ['twin_beds', 'ac', 'wifi', 'tv', 'mini_fridge']
   },
   {
     id: 8,
-    name: 'Romantic Suite',
-    shortDesc: 'Tökéletes választás pároknak',
-    description: 'Romantikus hangulatú lakosztály privát erkéllyel, különleges fürdőszobával és lenyűgöző kilátással.',
-    price: '75.000 Ft / éj',
-    size: '40m²',
-    capacity: '2 fő',
+    type: "room8",
+    price: "75000",
+    size: "40",
+    capacity: "2",
     images: [
       '/rablaki7813737.jpg',
       '/595182578.jpg',
       '/rablaki7813740.jpg'
     ],
-    amenities: ['King size ágy', 'Pezsgőfürdős kád', 'Privát erkély', 'Légkondicionáló', 'Wifi', 'Smart TV', 'Mini bár']
+    amenities: ['king_size', 'luxury_bath', 'balcony', 'ac', 'wifi', 'tv', 'minibar']
   },
   {
     id: 9,
-    name: 'Comfort Plus Szoba',
-    shortDesc: 'Extra kényelemmel felszerelve',
-    description: 'Modern berendezésű szoba extra kényelmi szolgáltatásokkal, dolgozósarokkal és pihenősarokkal.',
-    price: '48.000 Ft / éj',
-    size: '35m²',
-    capacity: '2-3 fő',
+    type: "room9",
+    price: "48000",
+    size: "35",
+    capacity: "3",
     images: [
       '/Room9/Lakatos_Banjol-163.jpg',
       '/Room9/Lakatos_Banjol-150.jpg',
@@ -231,19 +211,16 @@ const rooms: Room[] = [
       '/Room9/Lakatos_Banjol-159.jpg',
       '/Room9/Lakatos_Banjol-160.jpg',
       '/Room9/Lakatos_Banjol-161.jpg',
-      '/Room9/Lakatos_Banjol-162.jpg',
-      
+      '/Room9/Lakatos_Banjol-162.jpg'
     ],
-    amenities: ['Queen size ágy', 'Dolgozósarok', 'Pihenősarok', 'Légkondicionáló', 'Wifi', 'Smart TV', 'Kávéfőző']
+    amenities: ['queen_size', 'workspace', 'lounge', 'ac', 'wifi', 'tv', 'coffee_maker']
   },
   {
     id: 10,
-    name: 'Duplex Apartman',
-    shortDesc: 'Kétszintes luxus apartman',
-    description: 'Elegáns kétszintes apartman galériával, két fürdőszobával és modern konyhával. Tökéletes hosszabb tartózkodásra.',
-    price: '78.000 Ft / éj',
-    size: '65m²',
-    capacity: '4-5 fő',
+    type: "room10",
+    price: "78000",
+    size: "65",
+    capacity: "5",
     images: [
       '/Room10/Lakatos_Banjol-180.jpg',
       '/Room10/Lakatos_Banjol-164.jpg',
@@ -261,64 +238,9 @@ const rooms: Room[] = [
       '/Room10/Lakatos_Banjol-176.jpg',
       '/Room10/Lakatos_Banjol-177.jpg',
       '/Room10/Lakatos_Banjol-178.jpg',
-      '/Room10/Lakatos_Banjol-179.jpg',
-      
+      '/Room10/Lakatos_Banjol-179.jpg'
     ],
-    amenities: ['2 szint', '2 fürdőszoba', 'Felszerelt konyha', 'Légkondicionáló', 'Wifi', 'Smart TV', 'Mosógép', 'Erkély']
-  },
-  {
-    id: 11,
-    name: 'Külső terek és környezet',
-    shortDesc: 'Villa Laki Rab környezete',
-    description: 'Fedezze fel szálláshelyünk gyönyörű külső tereit, a kertet, a teraszt és a lenyűgöző környezetet. Drónfelvételeken és földi fotókon keresztül mutatjuk be a Villa Laki Rab csodálatos környezetét.',
-    price: 'sad',
-    size: 'asd',
-    capacity: 'asd',
-    images: [
-      '/outside/dron RL -01.jpg',
-      '/outside/dron RL -03.jpg',
-      '/outside/dron RL -09.jpg',
-      '/outside/dron RL -10.jpg',
-      '/outside/dron RL -13.jpg',
-      '/outside/dron RL -18.jpg',
-      '/outside/IMG_2607.jpg',
-      '/outside/IMG_2922.jpg',
-      '/outside/Lakatos_Banjol-001.jpg',
-      '/outside/Lakatos_Banjol-003.jpg',
-      '/outside/Lakatos_Banjol-005.jpg',
-      '/outside/Lakatos_Banjol-006.jpg',
-      '/outside/Lakatos_Banjol-008.jpg',
-      '/outside/Lakatos_Banjol-009.jpg',
-      '/outside/Lakatos_Banjol-010.jpg',
-      '/outside/Lakatos_Banjol-011.jpg',
-      '/outside/Lakatos_Banjol-012.jpg',
-      '/outside/Lakatos_Banjol-013.jpg',
-      '/outside/Lakatos_Banjol-015.jpg',
-      '/outside/Lakatos_Banjol-016.jpg',
-      '/outside/Lakatos_Banjol-017.jpg',
-      '/outside/Lakatos_Banjol-018.jpg',
-      '/outside/Lakatos_Banjol-019.jpg',
-      '/outside/Lakatos_Banjol-020.jpg',
-      '/outside/Lakatos_Banjol-021.jpg',
-      '/outside/Lakatos_Banjol-022.jpg',
-      '/outside/Lakatos_Banjol-023.jpg',
-      '/outside/Lakatos_Banjol-024.jpg',
-      '/outside/Lakatos_Banjol-025.jpg',
-      '/outside/Lakatos_Banjol-026.jpg',
-      '/outside/Lakatos_Banjol-027.jpg',
-      '/outside/Lakatos_Banjol-028.jpg',
-      '/outside/Lakatos_Banjol-029.jpg'
-    ],
-    amenities: [
-      'Drónfelvételek',
-      'Kert',
-      'Terasz',
-      'Parkoló',
-      'Grillező',
-      'Napozóterasz',
-      'Tengerre néző kilátás',
-      'Panorámás környezet'
-    ]
+    amenities: ['duplex', 'bathrooms_2', 'kitchen', 'ac', 'wifi', 'tv', 'washing_machine', 'balcony']
   }
 ];
 
@@ -384,7 +306,7 @@ const RoomCard = ({ room, onClick }: { room: Room; onClick: () => void }) => {
       <div className="aspect-[4/3] overflow-hidden">
         <Image 
           src={room.images[0]} 
-          alt={room.name} 
+          alt={t(`rooms_section.room_types.${room.type}.title`)} 
           layout="responsive" 
           width={400} 
           height={300} 
@@ -393,8 +315,9 @@ const RoomCard = ({ room, onClick }: { room: Room; onClick: () => void }) => {
       </div>
 
       <div className="p-6">
-        <h3 className="text-2xl font-bold text-gray-900 mb-2">{room.name}</h3>
-        <p className="text-gray-600 mb-4">{room.shortDesc}</p>
+        <h3 className="text-2xl font-bold text-gray-900 mb-2">
+          {t(`rooms_section.room_types.${room.type}.title`)}
+        </h3>
         
         <div className="flex items-center gap-4 mb-6 text-gray-500">
           <div className="flex items-center gap-1">
@@ -403,7 +326,7 @@ const RoomCard = ({ room, onClick }: { room: Room; onClick: () => void }) => {
                 d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" 
               />
             </svg>
-            <span>{room.size}</span>
+            <span>{room.size}m²</span>
           </div>
           <div className="flex items-center gap-1">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -411,12 +334,11 @@ const RoomCard = ({ room, onClick }: { room: Room; onClick: () => void }) => {
                 d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" 
               />
             </svg>
-            <span>{room.capacity}</span>
+            <span>{room.capacity} {t('rooms_section.capacity_unit')}</span>
           </div>
         </div>
 
         <div className="flex justify-between items-center">
-          <span className="text-xl font-bold text-primary">{room.price}</span>
           <span className="text-gray-400 group-hover:text-primary transition-colors duration-300">
             {t('rooms_section.details')} →
           </span>

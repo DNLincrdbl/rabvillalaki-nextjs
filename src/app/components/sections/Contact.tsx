@@ -83,21 +83,21 @@ const Contact = () => {
                   <input
                     type="text"
                     placeholder={t('contact_section.form.name_placeholder')}
-                    className="w-full px-3 py-1.5 md:py-2 text-xs md:text-base rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                    className="w-full px-3 py-1.5 md:py-2 text-xs md:text-base text-gray-900 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                   />
                 </div>
                 <div>
                   <input
                     type="email"
                     placeholder={t('contact_section.form.email_placeholder')}
-                    className="w-full px-3 py-1.5 md:py-2 text-xs md:text-base rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                    className="w-full px-3 py-1.5 md:py-2 text-xs md:text-base text-gray-900 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                   />
                 </div>
                 <div>
                   <textarea
                     placeholder={t('contact_section.form.message_placeholder')}
                     rows={2}
-                    className="w-full px-3 py-1.5 md:py-2 text-xs md:text-base rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                    className="w-full px-3 py-1.5 md:py-2 text-xs md:text-base text-gray-900 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                   />
                 </div>
                 <button
