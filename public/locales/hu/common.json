@@ -94,6 +94,10 @@
       "room10": {
         "title": "Szoba 10",
         "description": "Elegáns kétszintes apartman galériával"
+      },
+      "outdoor": {
+        "title": "Külső terület",
+        "description": "A Villa Laki Rab gyönyörű külső terei és környezete"
       }
     },
     "modal": {

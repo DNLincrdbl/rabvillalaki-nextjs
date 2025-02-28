@@ -105,6 +105,10 @@
             "room10": {
                 "title": "Soba 10",
                 "description": "Elegantni dvoetažni apartman s galerijom"
+            },
+            "outdoor": {
+                "title": "Vanjski prostor",
+                "description": "Prekrasan vanjski prostor i okoliš Villa Laki Rab"
             }
         },
         "rooms": {

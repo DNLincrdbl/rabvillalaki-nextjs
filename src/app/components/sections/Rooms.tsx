@@ -65,9 +65,18 @@ const rooms: Room[] = [
     size: "55",
     capacity: "4",
     images: [
-      '/595182562.jpg',
-      '/595182578.jpg',
-      '/rablaki7813737.jpg'
+      '/Room2/Lakatos_Banjol-070.jpg',
+      '/Room2/Lakatos_Banjol-071.jpg',
+      '/Room2/Lakatos_Banjol-072.jpg',
+      '/Room2/Lakatos_Banjol-073.jpg',
+      '/Room2/Lakatos_Banjol-074.jpg',
+      '/Room2/Lakatos_Banjol-075.jpg',
+      '/Room2/Lakatos_Banjol-076.jpg',
+      '/Room2/Lakatos_Banjol-077.jpg',
+      '/Room2/Lakatos_Banjol-078.jpg',
+      '/Room2/Lakatos_Banjol-079.jpg',
+      '/Room2/Lakatos_Banjol-080.jpg',
+      '/Room2/Lakatos_Banjol-081.jpg'
     ],
     amenities: ['bedrooms_2', 'kitchen', 'ac', 'wifi', 'tv', 'washing_machine', 'balcony']
   },
@@ -185,9 +194,24 @@ const rooms: Room[] = [
     size: "40",
     capacity: "2",
     images: [
-      '/rablaki7813737.jpg',
-      '/595182578.jpg',
-      '/rablaki7813740.jpg'
+      '/Room8/Lakatos_Banjol-132.jpg',
+    '/Room8/Lakatos_Banjol-133.jpg',
+    '/Room8/Lakatos_Banjol-134.jpg',
+    '/Room8/Lakatos_Banjol-135.jpg',
+    '/Room8/Lakatos_Banjol-136.jpg',
+    '/Room8/Lakatos_Banjol-137.jpg',
+    '/Room8/Lakatos_Banjol-138.jpg',
+    '/Room8/Lakatos_Banjol-139.jpg',
+    '/Room8/Lakatos_Banjol-140.jpg',
+    '/Room8/Lakatos_Banjol-141.jpg',
+    '/Room8/Lakatos_Banjol-142.jpg',
+    '/Room8/Lakatos_Banjol-143.jpg',
+    '/Room8/Lakatos_Banjol-144.jpg',
+    '/Room8/Lakatos_Banjol-145.jpg',
+    '/Room8/Lakatos_Banjol-146.jpg',
+    '/Room8/Lakatos_Banjol-147.jpg',
+    '/Room8/Lakatos_Banjol-148.jpg',
+    '/Room8/Lakatos_Banjol-149.jpg'
     ],
     amenities: ['king_size', 'luxury_bath', 'balcony', 'ac', 'wifi', 'tv', 'minibar']
   },
@@ -241,6 +265,40 @@ const rooms: Room[] = [
       '/Room10/Lakatos_Banjol-179.jpg'
     ],
     amenities: ['duplex', 'bathrooms_2', 'kitchen', 'ac', 'wifi', 'tv', 'washing_machine', 'balcony']
+  },
+  {
+    id: 11,
+    type: "outdoor",
+    price: "",
+    size: "",
+    capacity: "",
+    images: [
+      '/outside/dron RL -01.jpg',
+      '/outside/dron RL -03.jpg',
+      '/outside/dron RL -09.jpg',
+      '/outside/dron RL -10.jpg',
+      '/outside/dron RL -13.jpg',
+      '/outside/dron RL -18.jpg',
+      '/outside/IMG_2607.jpg',
+      '/outside/IMG_2922.jpg',
+      '/outside/Lakatos_Banjol-001.jpg',
+      '/outside/Lakatos_Banjol-003.jpg',
+      '/outside/Lakatos_Banjol-005.jpg',
+      '/outside/Lakatos_Banjol-006.jpg',
+      '/outside/Lakatos_Banjol-008.jpg',
+      '/outside/Lakatos_Banjol-009.jpg',
+      '/outside/Lakatos_Banjol-010.jpg',
+      '/outside/Lakatos_Banjol-011.jpg',
+      '/outside/Lakatos_Banjol-012.jpg',
+      '/outside/Lakatos_Banjol-013.jpg',
+      '/outside/Lakatos_Banjol-015.jpg',
+      '/outside/Lakatos_Banjol-016.jpg',
+      '/outside/Lakatos_Banjol-017.jpg',
+      '/outside/Lakatos_Banjol-018.jpg',
+      '/outside/Lakatos_Banjol-019.jpg',
+      '/outside/Lakatos_Banjol-020.jpg'
+    ],
+    amenities: []
   }
 ];
 
@@ -258,32 +316,24 @@ export default function Rooms() {
           </p>
         </div>
 
-        {/* First Row - 3 rooms */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-          {rooms.slice(0, 3).map((room) => (
-            <RoomCard key={room.id} room={room} onClick={() => setSelectedRoom(room)} />
-          ))}
-        </div>
+        {/* First Three Rows - 3 rooms each */}
+        {[0, 3, 6].map((startIndex) => (
+          <div key={startIndex} className="flex justify-center w-full mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 w-full max-w-[1248px]">
+              {rooms.slice(startIndex, startIndex + 3).map((room) => (
+                <RoomCard key={room.id} room={room} onClick={() => setSelectedRoom(room)} />
+              ))}
+            </div>
+          </div>
+        ))}
 
-        {/* Second Row - 2 rooms, centered */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-8">
-          {rooms.slice(3, 5).map((room) => (
-            <RoomCard key={room.id} room={room} onClick={() => setSelectedRoom(room)} />
-          ))}
-        </div>
-
-        {/* Third Row - 3 rooms */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-          {rooms.slice(5, 8).map((room) => (
-            <RoomCard key={room.id} room={room} onClick={() => setSelectedRoom(room)} />
-          ))}
-        </div>
-
-        {/* Fourth Row - 2 rooms, centered */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {rooms.slice(8, 10).map((room) => (
-            <RoomCard key={room.id} room={room} onClick={() => setSelectedRoom(room)} />
-          ))}
+        {/* Last Row - 2 rooms, centered */}
+        <div className="flex justify-center w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 w-full max-w-[832px]">
+            {rooms.slice(9, 11).map((room) => (
+              <RoomCard key={room.id} room={room} onClick={() => setSelectedRoom(room)} />
+            ))}
+          </div>
         </div>
       </div>
 

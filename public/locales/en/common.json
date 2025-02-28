@@ -95,6 +95,10 @@
             "room10": {
                 "title": "Room 10",
                 "description": "Elegant duplex apartment with gallery"
+            },
+            "outdoor": {
+                "title": "Outdoor Area",
+                "description": "Beautiful outdoor spaces and surroundings of Villa Laki Rab"
             }
         },
         "rooms": {
