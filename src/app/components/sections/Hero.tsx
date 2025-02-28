@@ -2,48 +2,37 @@
 import { motion } from "framer-motion";
 import Image from 'next/image';
 import { useTranslation } from "react-i18next";
+import Weather from './Weather';
 
 export default function Hero() {
   const { t } = useTranslation();
 
   return (
-    <section className="flex items-center justify-center min-h-[calc(100vh-80px)] bg-white">
-      <div className="container mx-auto px-4 py-8 md:py-12 mt-16 md:mt-0">
+    <section className="flex items-center justify-center min-h-[calc(100vh-80px)] bg-white pt-28 lg:pt-0">
+      <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
-          
-          <motion.div 
-            className="flex-1 text-center lg:text-left"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-          >
+          <div className="flex-1 text-center lg:text-left">
             <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-6">
               {t('hero.title.part1')}
               <span className="block text-[#007AFF] mt-2">{t('hero.title.part2')} </span>
               {t('hero.title.part3')}
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-xl">
+            <p className="text-xl text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0">
               {t('hero.description')}
             </p>
-            <div className="flex gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col items-center lg:items-start gap-8">
               <button className="bg-[#007AFF] text-white px-8 py-4 rounded-xl hover:bg-[#007AFF]/90 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#007AFF]/20">
                 {t('hero.book_now')}
               </button>
+              <div className="lg:hidden">
+                <Weather />
+              </div>
             </div>
-          </motion.div>
+          </div>
 
-          
-          <motion.div 
-            className="flex-1"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
-          >
+          <div className="flex-1 relative">
             <div className="relative">
-              
               <div className="absolute -inset-4 bg-gradient-to-r from-[#007AFF]/20 to-purple-500/20 rounded-[2rem] blur-2xl" />
-              
-              
               <div className="relative">
                 <div className="bg-white p-4 rounded-[2rem] shadow-xl">
                   <div className="overflow-hidden rounded-[1.5rem]">
@@ -58,7 +47,6 @@ export default function Hero() {
                   </div>
                 </div>
 
-                
                 <motion.div 
                   className="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-xl"
                   initial={{ opacity: 0, y: 20 }}
@@ -78,7 +66,11 @@ export default function Hero() {
                 </motion.div>
               </div>
             </div>
-          </motion.div>
+            
+            <div className="hidden lg:block absolute -bottom-20 -left-20">
+              <Weather />
+            </div>
+          </div>
         </div>
       </div>
     </section>

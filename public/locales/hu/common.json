@@ -274,5 +274,12 @@
         "value": "Check-in: 14:00 - 23:00\nCheck-out: 6:00 - 10:00"
       }
     }
+  },
+  "weather": {
+    "title": "Mai időjárás Rabon",
+    "feels_like": "Hőérzet",
+    "humidity": "Páratartalom",
+    "loading": "Időjárás betöltése...",
+    "error": "Időjárás adatok nem elérhetőek"
   }
 }

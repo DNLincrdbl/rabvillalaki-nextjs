@@ -277,5 +277,12 @@
                 "value": "Check-in: 14:00 - 23:00\nCheck-out: 6:00 - 10:00"
             }
         }
+    },
+    "weather": {
+        "title": "Današnje vrijeme u Rabu",
+        "feels_like": "Osjet",
+        "humidity": "Vlažnost",
+        "loading": "Učitavanje vremena...",
+        "error": "Podaci o vremenu nisu dostupni"
     }
 }

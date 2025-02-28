@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import AnimationWrapper from './components/sections/AnimationWrapper';
-
+import ScrollToTop from './components/sections/ScrollToTop';
 const inter = Inter({ subsets: ["latin"] });
 
 import "../i18n/i18n";
@@ -28,6 +28,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <AnimationWrapper>
           {children}
+          <ScrollToTop />
         </AnimationWrapper>
       </body>
     </html>

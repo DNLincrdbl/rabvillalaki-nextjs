@@ -266,6 +266,13 @@
                 "value": "Check-in: 14:00 - 23:00\nCheck-out: 6:00 - 10:00"
             }
         }
+    },
+    "weather": {
+        "title": "Today's Weather in Rab",
+        "feels_like": "Feels like",
+        "humidity": "Humidity",
+        "loading": "Loading weather...",
+        "error": "Weather data unavailable"
     }
 }
 
